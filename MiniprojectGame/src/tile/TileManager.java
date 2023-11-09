@@ -17,6 +17,7 @@ public class TileManager {
     private final int[] mapLimit = {mapTileSizeW*-1, mapTileSizeW+DefaultPanel.maxScreenRow};
 
     public TileManager(GamePanel gp, KeyHandler keyH, Player player) {
+        this.gp = gp;
         this.temp_distanceY = 0;
         this.keyH = keyH;
         this.player = player;
